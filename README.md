@@ -1,6 +1,6 @@
 # r-easy-stat
 ## About
-[Rによるやさしい統計学](http://shop.ohmsha.co.jp/shopdetail/000000001781/) （オーム社）のnotebooks
+『[Rによるやさしい統計学](http://shop.ohmsha.co.jp/shopdetail/000000001781/)』（オーム社）のnotebooks
 
 ## Rを[Jupyter notebook](http://jupyter.org/) で使う
 
