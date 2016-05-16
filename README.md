@@ -2,6 +2,14 @@
 ## About
 『[Rによるやさしい統計学](http://shop.ohmsha.co.jp/shopdetail/000000001781/)』（オーム社）のnotebooks
 
+## 目次
+第I部
+* [1章](/Chap01.ipynb)  
+* [2章](/Chap02.ipynb)  
+* [3章](/Chap03.ipynb)  
+* [4章](/Chap04.ipynb)  
+...
+
 ## Rを[Jupyter notebook](http://jupyter.org/) で使う
 
 * Rのインストール
