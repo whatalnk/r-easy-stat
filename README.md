@@ -8,6 +8,7 @@
 * [2章](/Chap02.ipynb)  
 * [3章](/Chap03.ipynb)  
 * [4章](/Chap04.ipynb)  
+* [5章](/Chap05.ipynb)
 ...
 
 ## Rを[Jupyter notebook](http://jupyter.org/) で使う
