@@ -4,11 +4,11 @@
 
 ## 目次
 第I部
-* [1章](http://whatalnk.github.io/r-easy-stat/Chap01.ipynb)  
-* [2章](http://whatalnk.github.io/r-easy-stat/Chap02.ipynb)  
-* [3章](http://whatalnk.github.io/r-easy-stat/Chap03.ipynb)  
-* [4章](http://whatalnk.github.io/r-easy-stat/Chap04.ipynb)  
-* [5章](http://whatalnk.github.io/r-easy-stat/Chap05.ipynb)  
+* [1章](http://whatalnk.github.io/r-easy-stat/Chap01.html)  
+* [2章](http://whatalnk.github.io/r-easy-stat/Chap02.html)  
+* [3章](http://whatalnk.github.io/r-easy-stat/Chap03.html)  
+* [4章](http://whatalnk.github.io/r-easy-stat/Chap04.html)  
+* [5章](http://whatalnk.github.io/r-easy-stat/Chap05.html)  
 ...
 
 ## Rを[Jupyter notebook](http://jupyter.org/) で使う
