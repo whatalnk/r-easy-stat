@@ -1,0 +1,35 @@
+<h1 id="r-easy-stat">r-easy-stat</h1>
+<h2 id="about">About</h2>
+<p>『<a href="http://shop.ohmsha.co.jp/shopdetail/000000001781/">Rによるやさしい統計学</a>』（オーム社）のnotebooks</p>
+<h2 id="目次">目次</h2>
+<p>第I部</p>
+<ul>
+<li><a href="http://whatalnk.github.io/r-easy-stat/Chap01.html">1章</a><br />
+</li>
+<li><a href="http://whatalnk.github.io/r-easy-stat/Chap02.html">2章</a><br />
+</li>
+<li><a href="http://whatalnk.github.io/r-easy-stat/Chap03.html">3章</a><br />
+</li>
+<li><a href="http://whatalnk.github.io/r-easy-stat/Chap04.html">4章</a><br />
+</li>
+<li><a href="http://whatalnk.github.io/r-easy-stat/Chap05.html">5章</a><br />
+...</li>
+</ul>
+<h2 id="rをjupyter-notebook-で使う">Rを<a href="http://jupyter.org/">Jupyter notebook</a> で使う</h2>
+<ul>
+<li>Rのインストール</li>
+<li>Pythonのインストール</li>
+<li><a href="http://conda.pydata.org/miniconda.html">Miniconda</a> をインストールする</li>
+<li>Jupyter インストール</li>
+<li><p>コマンドプロンプト（Macの人はTerminal等）から</p>
+<pre><code>conda install jupyter</code></pre></li>
+<li><a href="http://irkernel.github.io/">IRkernel</a>インストール</li>
+<li><p>R を起動して，</p>
+<pre><code>install.packages(c(&#39;repr&#39;, &#39;pbdZMQ&#39;, &#39;devtools&#39;)) 
+devtools::install_github(&#39;irkernel/IRdisplay&#39;)
+devtools::install_github(&#39;irkernel/IRkernel&#39;)
+IRkernel::installspec()</code></pre></li>
+<li>起動</li>
+<li><p>コマンドプロンプト（or Terminal）から，</p>
+<pre><code>jupyter notebook</code></pre></li>
+</ul>
