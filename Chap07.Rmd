@@ -66,9 +66,7 @@ help_console(df)
 
 ```{r, fig.width = 4, fig.height = 4}
 ggplot(data.frame(x = c(0:5)), aes(x)) + 
-    stat_function(fun = df, args = list(df1 = 3, df2 = 16)) + 
-  theme(axis.title = element_text(family="IPAexGothic")) + 
-  xlab("横軸")
+    stat_function(fun = df, args = list(df1 = 3, df2 = 16))
 ```
 
 * 有意水準: 5%，片側検定
