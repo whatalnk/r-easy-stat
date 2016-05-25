@@ -1,0 +1,105 @@
+---
+title: "7章 分散分析"
+output:
+  html_notebook: default
+---
+
+# 第I部
+# 第7章 分散分析
+
+```{r}
+pkgs <- c("pipeR", "dplyr", "tidyr", "ggplot2", "readr", "readxl")
+lapply(pkgs, require, character.only = TRUE)
+```
+```{r}
+d <- read_csv("teaching_methods.csv")
+head(d)
+```
+```{r}
+str(d)
+```
+```{r}
+names(d) <- c("id", "name", "sex","math", "stat", "psy_test", "stat_test1", "stat_test2", "teaching_method")
+```
+```{r}
+library(rlist)
+```
+```{r}
+library(purrr)
+```
+* 指導法ごとの統計テスト2の点数
+```{r}
+d %>>% 
+#     dplyr::select(stat_test2, teaching_method) %>>% 
+    split(.$teaching_method) %>>% 
+    purrr::map(~ .[["stat_test2"]]) %>>% 
+    rlist::list.cbind()
+```
+## 7.1 一元配置分散分析（対応なし）
+
+* 帰無仮説: 4群の母平均は等しい
+* 検定統計量 : 帰無仮説が正しいとき，自由度 $df_1$， $df_2$ の$F$分布に従う
+
+$$ F = \frac{\mbox{群間平方和 / 群間の自由度}}{\mbox{群内平方和 / 群内の自由度}} $$
+```{r, eval=FALSE, include=FALSE}
+install.packages('printr',
+                 type = 'source', 
+                 repos = c('http://yihui.name/xran', 'http://cran.rstudio.com')
+```
+
+```{r, eval=FALSE, include=FALSE}
+library(printr)
+```
+```{r, eval=FALSE, include=FALSE}
+?df
+```
+```{r}
+help_console <- function(topic) {  
+  if (!is.character(topic)) topic <- deparse(substitute(topic))
+  helpfile = utils:::.getHelpFile(help(topic))
+  hs <- capture.output(text=tools:::Rd2txt(helpfile))
+  cat(hs, sep = "\n")
+  invisible(hs)
+}
+help_console(df)
+```
+
+```{r, fig.width = 4, fig.height = 4}
+ggplot(data.frame(x = c(0:5)), aes(x)) + 
+    stat_function(fun = df, args = list(df1 = 3, df2 = 16)) + 
+  theme(axis.title = element_text(family="IPAexGothic")) + 
+  xlab("横軸")
+```
+
+* 有意水準: 5%，片側検定
+* 検定統計量の実現値
+
+```{r}
+dd <- d %>>% 
+    select(stat_test2, teaching_method) %>>% 
+    mutate(teaching_method = factor(teaching_method))
+str(dd)
+```
+
+* `oneway.test()`
+```{r}
+oneway.test(dd$stat_test2 ~ dd$teaching_method, var.equal = TRUE)
+```
+
+* `aov()`
+```{r}
+aov(dd$stat_test2 ~ dd$teaching_method)
+```
+```{r}
+aov(dd$stat_test2 ~ dd$teaching_method) %>>% summary
+```
+
+* `anova()`
+```{r}
+lm(dd$stat_test2 ~ dd$teaching_method) %>>% anova
+```
+
+```{r}
+devtools::session_info()
+```
+
