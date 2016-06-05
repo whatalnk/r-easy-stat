@@ -10,7 +10,8 @@
 * [3章](http://whatalnk.github.io/r-easy-stat/Chap03.html)  
 * [4章](http://whatalnk.github.io/r-easy-stat/Chap04.html)  
 * [5章](http://whatalnk.github.io/r-easy-stat/Chap05.html)  
-* [6章](http://whatalnk.github.io/r-easy-stat/Chap06.html)    
+* [6章](http://whatalnk.github.io/r-easy-stat/Chap06.html)  
+* [7章](http://whatalnk.github.io/r-easy-stat/Chap07.html)    
 ...
 
 ## Rを[Jupyter notebook](http://jupyter.org/) で使う
