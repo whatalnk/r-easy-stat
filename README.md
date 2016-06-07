@@ -22,6 +22,9 @@
     * [chap07_ex2.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_ex2.csv)  
 ...
 
+## Macで日本語を含んだcsvファイルを読み込んだ時にfileEncodingを正しく指定しても文字化けする場合
+* [osx - Installing R on Mac - Warning messages: Setting LC_CTYPE failed, using "C" - Stack Overflow](http://stackoverflow.com/questions/9689104/installing-r-on-mac-warning-messages-setting-lc-ctype-failed-using-c)
+
 ## Rを[Jupyter notebook](http://jupyter.org/) で使う
 
 * Rのインストール
