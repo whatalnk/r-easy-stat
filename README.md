@@ -20,6 +20,12 @@
     * [chap07_3.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_3.csv)，fileEncodhing = "cp932"
     * [chap07_ex1.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_ex1.csv)，fileEncodhing = "cp932"
     * [chap07_ex2.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_ex2.csv)，fileEncodhing = "cp932"  
+
+第II部
+* 8章，9章: 省略
+      * [Advanced R.](http://adv-r.had.co.nz/) の Foundations の [Data structures](http://adv-r.had.co.nz/Data-structures.html)，[Subsetting](http://adv-r.had.co.nz/Subsetting.html)，[Vocabulary](http://adv-r.had.co.nz/Vocabulary.html) など
+      * 日本語版: [R言語徹底解説](http://www.kyoritsu-pub.co.jp/bookdetail/9784320123939)  
+
 ...
 
 ## 日本語を含んだcsvファイルを読み込んだ時に文字化けする or 読み込めない場合
