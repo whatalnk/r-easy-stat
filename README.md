@@ -13,17 +13,32 @@
     * [Chap03_food.xlsx](https://github.com/whatalnk/r-easy-stat/raw/master/Chap03_food.xlsx)
 * [4章](http://whatalnk.github.io/r-easy-stat/Chap04.html)  
 * [5章](http://whatalnk.github.io/r-easy-stat/Chap05.html) 
-    * [teaching_methods.csv](https://github.com/whatalnk/r-easy-stat/raw/master/teaching_methods.csv)
+    * [teaching_methods.csv](https://github.com/whatalnk/r-easy-stat/raw/master/teaching_methods.csv)，fileEncodhing = "UTF-8"
 * [6章](http://whatalnk.github.io/r-easy-stat/Chap06.html)  
 * [7章](http://whatalnk.github.io/r-easy-stat/Chap07.html)    
-    * [chap07_2.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_2.csv)
-    * [chap07_3.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_3.csv)
-    * [chap07_ex1.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_ex1.csv)
-    * [chap07_ex2.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_ex2.csv)  
+    * [chap07_2.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_2.csv)，fileEncodhing = "cp932"
+    * [chap07_3.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_3.csv)，fileEncodhing = "cp932"
+    * [chap07_ex1.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_ex1.csv)，fileEncodhing = "cp932"
+    * [chap07_ex2.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_ex2.csv)，fileEncodhing = "cp932"  
 ...
 
-## Macで日本語を含んだcsvファイルを読み込んだ時にfileEncodingを正しく指定しても文字化けする場合
-* [osx - Installing R on Mac - Warning messages: Setting LC_CTYPE failed, using "C" - Stack Overflow](http://stackoverflow.com/questions/9689104/installing-r-on-mac-warning-messages-setting-lc-ctype-failed-using-c)
+## 日本語を含んだcsvファイルを読み込んだ時に文字化けする or 読み込めない場合
+* `fileEncoding` を指定する
+      * Excel で作ったcsvファイルはエンコーディングが cp932 なので，`read.csv("your-file-name.csv", fileEncodhing = "cp932")`
+      
+### Macの人でRを起動したときに下のようなエラーメッセージが出る場合
+```
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C"
+2: Setting LC_COLLATE failed, using "C"
+3: Setting LC_TIME failed, using "C"
+4: Setting LC_MESSAGES failed, using "C"
+5: Setting LC_PAPER failed, using "C"
+```
+
+* 下のリンクを見る（OSがUS の場合．OSが日本語の場合は，`en_US.UTF-8` を `ja_JP.UTF-8` に変える．）  
+
+> * [osx - Installing R on Mac - Warning messages: Setting LC_CTYPE failed, using "C" - Stack Overflow](http://stackoverflow.com/questions/9689104/installing-r-on-mac-warning-messages-setting-lc-ctype-failed-using-c)
 
 ## Rを[Jupyter notebook](http://jupyter.org/) で使う
 
