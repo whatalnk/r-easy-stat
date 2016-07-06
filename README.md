@@ -22,9 +22,14 @@
     * [chap07_ex2.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap07_ex2.csv)，fileEncodhing = "cp932"  
 
 第II部
-* 8章，9章: 省略
-      * [Advanced R.](http://adv-r.had.co.nz/) の Foundations の [Data structures](http://adv-r.had.co.nz/Data-structures.html)，[Subsetting](http://adv-r.had.co.nz/Subsetting.html)，[Vocabulary](http://adv-r.had.co.nz/Vocabulary.html) など
-      * 日本語版: [R言語徹底解説](http://www.kyoritsu-pub.co.jp/bookdetail/9784320123939)  
+
+* 8章，[9章](http://whatalnk.github.io/r-easy-stat/Chap09.html): 省略    
+    * [Advanced R.](http://adv-r.had.co.nz/) の Foundations の [Data structures](http://adv-r.had.co.nz/Data-structures.html)，[Subsetting](http://adv-r.had.co.nz/Subsetting.html)，[Vocabulary](http://adv-r.had.co.nz/Vocabulary.html) など
+    * 日本語版: [R言語徹底解説](http://www.kyoritsu-pub.co.jp/bookdetail/9784320123939)  
+* [10章](http://whatalnk.github.io/r-easy-stat/Chap10.html)  
+    * [chap10_1.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap10_1.csv)，fileEncodhing = "cp932"
+* [11章](http://whatalnk.github.io/r-easy-stat/Chap11.html)  
+    * [chap11_1.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap11_1.csv)，fileEncodhing = "cp932"
 
 ...
 
