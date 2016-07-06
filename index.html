@@ -19,19 +19,58 @@
 </li>
 <li><a href="http://whatalnk.github.io/r-easy-stat/Chap05.html">5章</a>
 <ul>
-<li><a href="https://github.com/whatalnk/r-easy-stat/raw/master/teaching_methods.csv">teaching_methods.csv</a></li>
+<li><a href="https://github.com/whatalnk/r-easy-stat/raw/master/teaching_methods.csv">teaching_methods.csv</a>，fileEncodhing = &quot;UTF-8&quot;</li>
 </ul></li>
 <li><a href="http://whatalnk.github.io/r-easy-stat/Chap06.html">6章</a><br />
 </li>
 <li><a href="http://whatalnk.github.io/r-easy-stat/Chap07.html">7章</a>
 <ul>
-<li><a href="https://github.com/whatalnk/r-easy-stat/raw/master/chap07_2.csv">chap07_2.csv</a></li>
-<li><a href="https://github.com/whatalnk/r-easy-stat/raw/master/chap07_3.csv">chap07_3.csv</a></li>
-<li><a href="https://github.com/whatalnk/r-easy-stat/raw/master/chap07_ex1.csv">chap07_ex1.csv</a></li>
-<li><a href="https://github.com/whatalnk/r-easy-stat/raw/master/chap07_ex2.csv">chap07_ex2.csv</a><br />
-...</li>
+<li><a href="https://github.com/whatalnk/r-easy-stat/raw/master/chap07_2.csv">chap07_2.csv</a>，fileEncodhing = &quot;cp932&quot;</li>
+<li><a href="https://github.com/whatalnk/r-easy-stat/raw/master/chap07_3.csv">chap07_3.csv</a>，fileEncodhing = &quot;cp932&quot;</li>
+<li><a href="https://github.com/whatalnk/r-easy-stat/raw/master/chap07_ex1.csv">chap07_ex1.csv</a>，fileEncodhing = &quot;cp932&quot;</li>
+<li><a href="https://github.com/whatalnk/r-easy-stat/raw/master/chap07_ex2.csv">chap07_ex2.csv</a>，fileEncodhing = &quot;cp932&quot;</li>
 </ul></li>
 </ul>
+<p>第II部</p>
+<ul>
+<li>8章，<a href="http://whatalnk.github.io/r-easy-stat/Chap09.html">9章</a>: 省略
+<ul>
+<li><a href="http://adv-r.had.co.nz/">Advanced R.</a> の Foundations の <a href="http://adv-r.had.co.nz/Data-structures.html">Data structures</a>，<a href="http://adv-r.had.co.nz/Subsetting.html">Subsetting</a>，<a href="http://adv-r.had.co.nz/Vocabulary.html">Vocabulary</a> など</li>
+<li>日本語版: <a href="http://www.kyoritsu-pub.co.jp/bookdetail/9784320123939">R言語徹底解説</a><br />
+</li>
+</ul></li>
+<li><a href="http://whatalnk.github.io/r-easy-stat/Chap10.html">10章</a>
+<ul>
+<li><a href="https://github.com/whatalnk/r-easy-stat/raw/master/chap10_1.csv">chap10_1.csv</a>，fileEncodhing = &quot;cp932&quot;</li>
+</ul></li>
+<li><a href="http://whatalnk.github.io/r-easy-stat/Chap11.html">11章</a>
+<ul>
+<li><a href="https://github.com/whatalnk/r-easy-stat/raw/master/chap11_1.csv">chap11_1.csv</a>，fileEncodhing = &quot;cp932&quot;</li>
+</ul></li>
+</ul>
+<p>...</p>
+<h2 id="日本語を含んだcsvファイルを読み込んだ時に文字化けする-or-読み込めない場合">日本語を含んだcsvファイルを読み込んだ時に文字化けする or 読み込めない場合</h2>
+<ul>
+<li><code>fileEncoding</code> を指定する
+<ul>
+<li>Excel で作ったcsvファイルはエンコーディングが cp932 なので，<code>read.csv(&quot;your-file-name.csv&quot;, fileEncodhing = &quot;cp932&quot;)</code></li>
+</ul></li>
+</ul>
+<h3 id="macの人でrを起動したときに下のようなエラーメッセージが出る場合">Macの人でRを起動したときに下のようなエラーメッセージが出る場合</h3>
+<pre><code>During startup - Warning messages:
+1: Setting LC_CTYPE failed, using &quot;C&quot;
+2: Setting LC_COLLATE failed, using &quot;C&quot;
+3: Setting LC_TIME failed, using &quot;C&quot;
+4: Setting LC_MESSAGES failed, using &quot;C&quot;
+5: Setting LC_PAPER failed, using &quot;C&quot;</code></pre>
+<ul>
+<li>下のリンクを見る（OSがUS の場合．OSが日本語の場合は，<code>en_US.UTF-8</code> を <code>ja_JP.UTF-8</code> に変える．）</li>
+</ul>
+<blockquote>
+<ul>
+<li><a href="http://stackoverflow.com/questions/9689104/installing-r-on-mac-warning-messages-setting-lc-ctype-failed-using-c">osx - Installing R on Mac - Warning messages: Setting LC_CTYPE failed, using &quot;C&quot; - Stack Overflow</a></li>
+</ul>
+</blockquote>
 <h2 id="rをjupyter-notebook-で使う">Rを<a href="http://jupyter.org/">Jupyter notebook</a> で使う</h2>
 <ul>
 <li>Rのインストール</li>
