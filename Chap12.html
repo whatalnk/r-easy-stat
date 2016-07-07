@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Chap11</title>
+<title>Chap12</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11751,7 +11751,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#31532;II&#37096;">&#31532;II&#37096;<a class="anchor-link" href="#&#31532;II&#37096;">&#182;</a></h1><h1 id="&#31532;11&#31456;-&#32113;&#35336;&#35299;&#26512;&#12391;&#20998;&#12363;&#12427;&#12371;&#12392;&#12539;&#20998;&#12363;&#12425;&#12394;&#12356;&#12371;&#12392;">&#31532;11&#31456; &#32113;&#35336;&#35299;&#26512;&#12391;&#20998;&#12363;&#12427;&#12371;&#12392;&#12539;&#20998;&#12363;&#12425;&#12394;&#12356;&#12371;&#12392;<a class="anchor-link" href="#&#31532;11&#31456;-&#32113;&#35336;&#35299;&#26512;&#12391;&#20998;&#12363;&#12427;&#12371;&#12392;&#12539;&#20998;&#12363;&#12425;&#12394;&#12356;&#12371;&#12392;">&#182;</a></h1>
+<h1 id="&#31532;II&#37096;">&#31532;II&#37096;<a class="anchor-link" href="#&#31532;II&#37096;">&#182;</a></h1><h1 id="&#31532;12&#31456;-&#20108;&#38917;&#26908;&#23450;">&#31532;12&#31456; &#20108;&#38917;&#26908;&#23450;<a class="anchor-link" href="#&#31532;12&#31456;-&#20108;&#38917;&#26908;&#23450;">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -11845,9 +11845,19 @@ The following object is masked from &#39;package:dplyr&#39;:
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>x: 子供のゲーム時間</li>
-<li>y: 親の認識したゲーム時間</li>
+<li>日ハム : 楽天 = 17:3</li>
+<li>日ハムの方が強いか =&gt; 勝つ確率が0.5より大きいかどうか =&gt; 帰無仮説: 勝つ確率は0.5（片側検定）</li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>勝つ確率が0.5の時に17勝する確率は</p>
 
 </div>
 </div>
@@ -11857,8 +11867,7 @@ The following object is masked from &#39;package:dplyr&#39;:
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>d <span class="o">&lt;-</span> read_csv<span class="p">(</span><span class="s">&quot;chap11_1.csv&quot;</span><span class="p">,</span> locale <span class="o">=</span> locale<span class="p">(</span>encoding <span class="o">=</span> <span class="s">&quot;cp932&quot;</span><span class="p">))</span>
-d
+<div class=" highlight hl-r"><pre><span></span>dbinom<span class="p">(</span><span class="m">17</span><span class="p">,</span> <span class="m">20</span><span class="p">,</span> <span class="m">0.5</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11872,32 +11881,7 @@ d
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<table>
-<thead><tr><th></th><th scope=col>親子</th><th scope=col>x</th><th scope=col>y</th></tr></thead>
-<tbody>
-	<tr><th scope=row>1</th><td>  1</td><td>290</td><td>350</td></tr>
-	<tr><th scope=row>2</th><td> 2</td><td>50</td><td>70</td></tr>
-	<tr><th scope=row>3</th><td>  3</td><td> 80</td><td>100</td></tr>
-	<tr><th scope=row>4</th><td>  4</td><td>100</td><td>130</td></tr>
-	<tr><th scope=row>5</th><td>  5</td><td>200</td><td>250</td></tr>
-	<tr><th scope=row>6</th><td>  6</td><td>350</td><td>430</td></tr>
-	<tr><th scope=row>7</th><td>  7</td><td>430</td><td>520</td></tr>
-	<tr><th scope=row>8</th><td>  8</td><td> 80</td><td>100</td></tr>
-	<tr><th scope=row>9</th><td>  9</td><td>210</td><td>260</td></tr>
-	<tr><th scope=row>10</th><td> 10</td><td>110</td><td>140</td></tr>
-	<tr><th scope=row>11</th><td>11</td><td>70</td><td>90</td></tr>
-	<tr><th scope=row>12</th><td> 12</td><td>260</td><td>320</td></tr>
-	<tr><th scope=row>13</th><td> 13</td><td>220</td><td>270</td></tr>
-	<tr><th scope=row>14</th><td> 14</td><td>330</td><td>400</td></tr>
-	<tr><th scope=row>15</th><td> 15</td><td>170</td><td>210</td></tr>
-	<tr><th scope=row>16</th><td> 16</td><td>420</td><td>510</td></tr>
-	<tr><th scope=row>17</th><td> 17</td><td> 80</td><td>100</td></tr>
-	<tr><th scope=row>18</th><td> 18</td><td>300</td><td>370</td></tr>
-	<tr><th scope=row>19</th><td> 19</td><td>290</td><td>350</td></tr>
-	<tr><th scope=row>20</th><td> 20</td><td>230</td><td>280</td></tr>
-</tbody>
-</table>
-
+0.00108718872070313
 </div>
 
 </div>
@@ -11905,294 +11889,10 @@ d
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>（1.1）x, y それぞれについて度数分布，代表値，散布度</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="kp">options</span><span class="p">(</span>repr.plot.width <span class="o">=</span> <span class="m">8</span><span class="p">,</span> repr.plot.height <span class="o">=</span> <span class="m">6</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>d <span class="o">%&gt;&gt;%</span> gather<span class="p">(</span>key<span class="p">,</span> val<span class="p">,</span> <span class="o">-</span>親子<span class="p">)</span> <span class="o">%&gt;&gt;%</span> 
-    ggplot<span class="p">(</span>aes<span class="p">(</span>x <span class="o">=</span> val<span class="p">))</span> <span class="o">+</span> geom_histogram<span class="p">(</span>breaks <span class="o">=</span> <span class="kp">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">600</span><span class="p">,</span> <span class="m">60</span><span class="p">))</span> <span class="o">+</span> facet_wrap<span class="p">(</span><span class="o">~</span> key<span class="p">,</span> nrow <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-
-
-<div class="output_text output_subarea ">
-<pre></pre>
-</div>
-
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_svg output_subarea ">
-<img src="Chap11_files/Chap11_6_1.svg"
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>平均値</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>d <span class="o">%&gt;&gt;%</span> summarise_each<span class="p">(</span>funs<span class="p">(</span><span class="kp">mean</span><span class="p">),</span> <span class="o">-</span>親子<span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<table>
-<thead><tr><th></th><th scope=col>x</th><th scope=col>y</th></tr></thead>
-<tbody>
-	<tr><th scope=row>1</th><td>213.5</td><td>262.5</td></tr>
-</tbody>
-</table>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>中央値</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>d <span class="o">%&gt;&gt;%</span> summarise_each<span class="p">(</span>funs<span class="p">(</span>median<span class="p">),</span> <span class="o">-</span>親子<span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<table>
-<thead><tr><th></th><th scope=col>x</th><th scope=col>y</th></tr></thead>
-<tbody>
-	<tr><th scope=row>1</th><td>215</td><td>265</td></tr>
-</tbody>
-</table>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>標本分散</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>varp <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> <span class="p">{</span>
-    ret <span class="o">&lt;-</span> var<span class="p">(</span>x<span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="kp">length</span><span class="p">(</span>x<span class="p">)</span> <span class="o">-</span> <span class="m">1</span><span class="p">)</span> <span class="o">/</span> <span class="kp">length</span><span class="p">(</span>x<span class="p">)</span>
-    ret
-<span class="p">}</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>d <span class="o">%&gt;&gt;%</span> summarise_each<span class="p">(</span>funs<span class="p">(</span>varp<span class="p">),</span> <span class="o">-</span>親子<span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<table>
-<thead><tr><th></th><th scope=col>x</th><th scope=col>y</th></tr></thead>
-<tbody>
-	<tr><th scope=row>1</th><td>13492.75</td><td>19328.75</td></tr>
-</tbody>
-</table>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>標準偏差</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>d <span class="o">%&gt;&gt;%</span> summarise_each<span class="p">(</span>funs<span class="p">(</span><span class="kp">sqrt</span><span class="p">(</span>varp<span class="p">(</span><span class="m">.</span><span class="p">))),</span> <span class="o">-</span>親子<span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<table>
-<thead><tr><th></th><th scope=col>x</th><th scope=col>y</th></tr></thead>
-<tbody>
-	<tr><th scope=row>1</th><td>116.1583</td><td>139.0279</td></tr>
-</tbody>
-</table>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>（1.2）xとyの差について，度数分布，代表値，散布度</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>d <span class="o">&lt;-</span> d <span class="o">%&gt;&gt;%</span> mutate<span class="p">(</span>yx <span class="o">=</span> y <span class="o">-</span> x<span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="kp">options</span><span class="p">(</span>repr.plot.width <span class="o">=</span> <span class="m">4</span><span class="p">,</span> repr.plot.height <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
@@ -12205,10 +11905,12 @@ d
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>d <span class="o">%&gt;&gt;%</span> ggplot<span class="p">(</span>aes<span class="p">(</span>x <span class="o">=</span> yx<span class="p">))</span> <span class="o">+</span> geom_histogram<span class="p">(</span>breaks <span class="o">=</span> <span class="kp">seq</span><span class="p">(</span><span class="m">20</span><span class="p">,</span> <span class="m">90</span><span class="p">,</span> <span class="m">10</span><span class="p">))</span>
+<div class=" highlight hl-r"><pre><span></span><span class="kt">data.frame</span><span class="p">(</span>x <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="m">20</span><span class="p">),</span> y <span class="o">=</span> dbinom<span class="p">(</span><span class="kt">c</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="m">20</span><span class="p">),</span> <span class="m">20</span><span class="p">,</span> <span class="m">0.5</span><span class="p">))</span> <span class="o">%&gt;&gt;%</span> 
+    ggplot<span class="p">(</span>aes<span class="p">(</span>x <span class="o">=</span> x<span class="p">,</span> y <span class="o">=</span> y<span class="p">))</span> <span class="o">+</span> 
+        geom_point<span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12231,7 +11933,7 @@ d
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_svg output_subarea ">
-<img src="Chap11_files/Chap11_19_1.svg"
+<img src="Chap12_files/Chap12_6_1.svg"
 </div>
 
 </div>
@@ -12242,10 +11944,71 @@ d
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>d <span class="o">%&gt;&gt;%</span> summarise_each<span class="p">(</span>funs<span class="p">(</span><span class="kp">mean</span><span class="p">,</span> median<span class="p">,</span> varp<span class="p">,</span> <span class="kp">sqrt</span><span class="p">(</span>varp<span class="p">(</span><span class="m">.</span><span class="p">))),</span> yx<span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span>pbinom<span class="p">(</span><span class="kt">c</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="m">20</span><span class="p">),</span> <span class="m">20</span><span class="p">,</span> <span class="m">0.5</span><span class="p">)</span> <span class="o">%&gt;&gt;%</span> <span class="kp">round</span><span class="p">(</span>digit <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>0</li>
+	<li>0</li>
+	<li>2e-04</li>
+	<li>0.0013</li>
+	<li>0.0059</li>
+	<li>0.0207</li>
+	<li>0.0577</li>
+	<li>0.1316</li>
+	<li>0.2517</li>
+	<li>0.4119</li>
+	<li>0.5881</li>
+	<li>0.7483</li>
+	<li>0.8684</li>
+	<li>0.9423</li>
+	<li>0.9793</li>
+	<li>0.9941</li>
+	<li>0.9987</li>
+	<li>0.9998</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+</ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>棄却域は15勝以上</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="kt">data.frame</span><span class="p">(</span>win <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="m">20</span><span class="p">),</span> prob <span class="o">=</span> pbinom<span class="p">(</span><span class="kt">c</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="m">20</span><span class="p">),</span> <span class="m">20</span><span class="p">,</span> <span class="m">0.5</span><span class="p">))</span> <span class="o">%&gt;&gt;%</span> filter<span class="p">(</span>prob <span class="o">&gt;=</span> <span class="m">0.95</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12260,9 +12023,15 @@ d
 
 <div class="output_html rendered_html output_subarea ">
 <table>
-<thead><tr><th></th><th scope=col>mean</th><th scope=col>median</th><th scope=col>varp</th><th scope=col>sqrt</th></tr></thead>
+<thead><tr><th></th><th scope=col>win</th><th scope=col>prob</th></tr></thead>
 <tbody>
-	<tr><th scope=row>1</th><td> 49</td><td> 50</td><td>529</td><td> 23</td></tr>
+	<tr><th scope=row>1</th><td>14.0000000</td><td> 0.9793053</td></tr>
+	<tr><th scope=row>2</th><td>15.000000</td><td> 0.994091</td></tr>
+	<tr><th scope=row>3</th><td>16.0000000</td><td> 0.9987116</td></tr>
+	<tr><th scope=row>4</th><td>17.0000000</td><td> 0.9997988</td></tr>
+	<tr><th scope=row>5</th><td>18.00000</td><td> 0.99998</td></tr>
+	<tr><th scope=row>6</th><td>19.000000</td><td> 0.999999</td></tr>
+	<tr><th scope=row>7</th><td>20</td><td> 1</td></tr>
 </tbody>
 </table>
 
@@ -12279,17 +12048,17 @@ d
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>（1.3）xとyの相関係数</p>
+<p>$p$値は</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="kp">with</span><span class="p">(</span>cor<span class="p">(</span>x<span class="p">,</span> y<span class="p">),</span> data <span class="o">=</span> d<span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span>pbinom<span class="p">(</span><span class="m">16</span><span class="p">,</span> <span class="m">20</span><span class="p">,</span> <span class="m">0.5</span><span class="p">,</span> lower.tail <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12303,7 +12072,7 @@ d
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-0.999814777240536
+0.00128841400146485
 </div>
 
 </div>
@@ -12317,65 +12086,36 @@ d
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>（1.4）<code>y~x</code>の回帰式</p>
+<h2 id="12.3-&#12376;&#12419;&#12435;&#12369;&#12435;">12.3 &#12376;&#12419;&#12435;&#12369;&#12435;<a class="anchor-link" href="#12.3-&#12376;&#12419;&#12435;&#12369;&#12435;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>10回中7回的中は1/3より高いか</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>棄却域は7回以上</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>res.lm <span class="o">&lt;-</span> lm<span class="p">(</span>y<span class="o">~</span>x<span class="p">,</span> data <span class="o">=</span> d<span class="p">)</span>
-res.lm <span class="o">%&gt;&gt;%</span> <span class="kp">summary</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-
-
-<div class="output_text output_subarea ">
-<pre>
-Call:
-lm(formula = y ~ x, data = d)
-
-Residuals:
-    Min      1Q  Median      3Q     Max 
--4.0446 -2.3701 -0.3618  2.1800  4.1558 
-
-Coefficients:
-            Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept) 7.012840   1.319652   5.314 4.73e-05 ***
-x           1.196661   0.005429 220.401  &lt; 2e-16 ***
----
-Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-
-Residual standard error: 2.82 on 18 degrees of freedom
-Multiple R-squared:  0.9996,	Adjusted R-squared:  0.9996 
-F-statistic: 4.858e+04 on 1 and 18 DF,  p-value: &lt; 2.2e-16
-</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>res.lm<span class="o">$</span>coefficients
+<div class=" highlight hl-r"><pre><span></span><span class="kt">data.frame</span><span class="p">(</span>x <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="m">10</span><span class="p">),</span> prob <span class="o">=</span> pbinom<span class="p">(</span><span class="kt">c</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="m">10</span><span class="p">),</span> <span class="m">10</span><span class="p">,</span> <span class="m">1</span><span class="o">/</span><span class="m">3</span><span class="p">))</span> <span class="o">%&gt;&gt;%</span> filter<span class="p">(</span>prob <span class="o">&gt;=</span> <span class="m">0.95</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12389,12 +12129,16 @@ F-statistic: 4.858e+04 on 1 and 18 DF,  p-value: &lt; 2.2e-16
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<dl class=dl-horizontal>
-	<dt>(Intercept)</dt>
-		<dd>7.01284022901187</dd>
-	<dt>x</dt>
-		<dd>1.19666116988753</dd>
-</dl>
+<table>
+<thead><tr><th></th><th scope=col>x</th><th scope=col>prob</th></tr></thead>
+<tbody>
+	<tr><th scope=row>1</th><td>6.0000000</td><td>0.9803384</td></tr>
+	<tr><th scope=row>2</th><td>7.000000</td><td>0.996596</td></tr>
+	<tr><th scope=row>3</th><td>8.0000000</td><td>0.9996444</td></tr>
+	<tr><th scope=row>4</th><td>9.0000000</td><td>0.9999831</td></tr>
+	<tr><th scope=row>5</th><td>10</td><td> 1</td></tr>
+</tbody>
+</table>
 
 </div>
 
@@ -12406,11 +12150,10 @@ F-statistic: 4.858e+04 on 1 and 18 DF,  p-value: &lt; 2.2e-16
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>d <span class="o">%&gt;&gt;%</span> ggplot<span class="p">(</span>aes<span class="p">(</span>x <span class="o">=</span> x<span class="p">,</span> y <span class="o">=</span> y<span class="p">))</span> <span class="o">+</span> geom_point<span class="p">()</span> <span class="o">+</span> 
-    geom_abline<span class="p">(</span>intercept <span class="o">=</span> res.lm<span class="o">$</span>coefficients<span class="p">[</span><span class="s">&quot;(Intercept)&quot;</span><span class="p">],</span> slope <span class="o">=</span> res.lm<span class="o">$</span>coefficients<span class="p">[</span><span class="s">&quot;x&quot;</span><span class="p">])</span>
+<div class=" highlight hl-r"><pre><span></span>pbinom<span class="p">(</span><span class="m">6</span><span class="p">,</span> <span class="m">10</span><span class="p">,</span> <span class="m">1</span><span class="o">/</span><span class="m">3</span><span class="p">,</span> lower.tail <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12423,17 +12166,8 @@ F-statistic: 4.858e+04 on 1 and 18 DF,  p-value: &lt; 2.2e-16
 
 <div class="output_area"><div class="prompt"></div>
 
-
-<div class="output_text output_subarea ">
-<pre></pre>
-</div>
-
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_svg output_subarea ">
-<img src="Chap11_files/Chap11_26_1.svg"
+<div class="output_html rendered_html output_subarea ">
+0.0196616369455876
 </div>
 
 </div>
@@ -12441,30 +12175,10 @@ F-statistic: 4.858e+04 on 1 and 18 DF,  p-value: &lt; 2.2e-16
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>（2）（1）からわかること，わからないこと</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>（3）（2）より，実態と認識のずれを調べる方法は</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>devtools<span class="o">::</span>session_info<span class="p">()</span>
