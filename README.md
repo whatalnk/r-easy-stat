@@ -30,6 +30,7 @@
     * [chap10_1.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap10_1.csv)，fileEncodhing = "cp932"
 * [11章](http://whatalnk.github.io/r-easy-stat/Chap11.html)  
     * [chap11_1.csv](https://github.com/whatalnk/r-easy-stat/raw/master/chap11_1.csv)，fileEncodhing = "cp932"
+* [12章](http://whatalnk.github.io/r-easy-stat/Chap11.html)  
 
 ...
 
